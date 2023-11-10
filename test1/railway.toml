@@ -1,0 +1,7 @@
+[build]
+environment = ["DJANGO_SETTINGS_MODULE=test1.settings"]
+
+[env]
+DJANGO_SECRET_KEY = "django-insecure-v^o9m+nkd(9^7!%57@9^!^u$h6auzo)ym&)!(g0@od2y&!1kgv"
+DJANGO_ALLOWED_HOSTS = "<your-railway-subdomain>.railway.app"
+DATABASE_URL = "@default"
