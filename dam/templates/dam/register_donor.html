@@ -1,0 +1,59 @@
+{% extends 'base.html '%}
+
+{% load static %}
+{% block content %}
+    
+
+
+{% comment %}
+ <form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    
+    <button type="submit">submit</button>
+</form>
+{% endcomment %}
+
+
+<div class="form-container">
+    <h2>Donate for Afghanistan</h2>
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="form-field">
+                {{ field.label_tag }}
+                {{ field }}
+                {{ field.errors }}
+            </div>
+        {% endfor %}
+        {{ form.non_field_errors }}  {# Display non-field errors, if any #}
+
+        <div class="button-container">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+{% comment %}
+    
+
+
+<div class="form-container">
+    <h2>Donate for Afghanistan</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        {{ form.non_field_errors }}  {# Display non-field errors, if any #}
+        
+        <div class="button-container">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+{% endcomment %}
+    
+    {% endblock %}
+    

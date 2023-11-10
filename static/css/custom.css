@@ -1,3 +1,163 @@
+body {
+    background-image: url("/static/images/kunar_dam.jpg");
+    background-size: cover;
+    font-size: large;
+ 
+    
+}
+
+
+/* Style the form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #92dfe4;
+   
+    
+    
+    
+}
+
+.form-container h2 {
+    text-align: center;
+    background: #bcd4eb;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style form input fields */
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}
+
+/* Style form select fields */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style form button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+ /* CSS styles for the Thank You page */
+ .thank-you-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.thank-you-content h1 {
+    font-size: 54px;
+    color: #df1b87;
+}
+
+.thank-you-content p {
+    font-size: 20px;
+    color: #e4e6ea;
+    margin: 10px 0;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Center the button */
+.button-container {
+    text-align: center;
+}
+
+
+
+
+
+/* CSS styles for the home page */
+.home-content {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.home-content h1 {
+    font-size: 54px;
+    color: #df1b87;
+}
+
+.home-content p {
+    font-size: 20px;
+    color: #e4e6ea;
+    margin: 10px 0;
+}
+
+.register-button {
+    background-color: #df1b87;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.register-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button  {
+    
+    background-color: #df1b87;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+
+.back-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.thank-you-content {
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
 
 
 h1 {

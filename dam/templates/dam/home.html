@@ -1,7 +1,17 @@
 {% extends 'base.html' %}
-{% block content %}
-    <h1>Home</h1>
-</body>
-</html>
+{% load static %}
 
+{% block content %}
+    <div class="home-content">
+        <h1>Welcome to Our Cause</h1>
+        <p>Help us build a dam for a better future!</p>
+        <button class="register-button"><a href="{% url 'register_donor' %}">Register</a></button>
+
+        <p>Total Contribution In USD: ${{ total_contrib_usd.total_contrib|default:"0.00" }}</p>
+        <p>Total Contribution In AFG: {{ total_contrib_afg.total_contrib|default:"0.00" }} AFG</p>
+        <p>Total Number Of Registered Donors: {{ user_count.total|default:"0" }}</p>
+      
+
+        
+    </div>
 {% endblock %}
