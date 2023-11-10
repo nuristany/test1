@@ -1,4 +1,8 @@
-
+body {
+    background-image: url("/static/images/kunar_dam.jpg");
+    background-size: cover;
+    font-size: large;
+}
 
 h1 {
     color: #1bdf2f;
