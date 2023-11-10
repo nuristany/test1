@@ -28,6 +28,7 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 
 
 ALLOWED_HOSTS = ['test1-production-ba4b.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://*.mydomain.com','https://*.127.0.0.1']
 
 
 
