@@ -64,7 +64,10 @@ def home(request):
 # def thank_you(request):
 #     return render(request, 'dam/thank_you.html')
 
+from django.views.decorators.csrf import csrf_exempt
 
+
+@csrf_exempt
 def register_donor(request):
     error_message = None  # Initialize error message
 
