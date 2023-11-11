@@ -24,9 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 
+# ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = ['test1-production-ba4b.up.railway.app']
 CSRF_TRUSTED_ORIGINS = ['https://test1-production-ba4b.up.railway.app']
 
@@ -47,8 +49,8 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -89,14 +91,16 @@ WSGI_APPLICATION = 'test1.wsgi.application'
 # }
 
 
+
+
 DATABASES = {
-    'default' : {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2_binary',
-        'NAME': config('DATABASE_NAME'),
-        'USER': config('DATABASE_USER'),
-        'PASSWORD': config('DATABASE_PASSWORD'),
-        'HOST': config('DATABASE_HOST'),
-        'PORT': config('DATABASE_PORT')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': config('PGHOST'),
+        'PORT': config('PGPORT', default=''),  # Default to an empty string if not provided
+        'USER': config('PGUSER'),
+        'PASSWORD': config('PGPASSWORD'),
+        'NAME': config('PGDATABASE'),
     }
 }
 
